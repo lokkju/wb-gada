@@ -2,21 +2,33 @@
    <html> 
    <head>
       <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-      <title>Page Title</title> 
+      <title id="p1_l_title">Page Title</title> 
       <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
       <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
       <script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+      <script type="text/javascript" language="JavaScript" src="js/jquery.i18n.properties-min.js"></script>
+      <script type="text/javascript" language="JavaScript">
+		jQuery(document).ready(function() {
+			jQuery.i18n.properties({
+				name: 'messages',
+				path:'i18n/',  
+				callback: function(){}
+			});
+		});
+      </script>
    </head> 
 <body> 
 <div data-role="page">
    <div data-role="header">
-      <h1>Page Title</h1>
+      <h1 id="p1_l_title">World Bank GADA</h1>
    </div><!-- /header -->
    <div data-role="content">
-      <p>Page content goes here.</p>
+      <p>
+      <!-- icon -->
+      <a href="page_help_now.html" data-role="button" id="p1_b_getHelp">Get Help</a>
+      <a href="page_resources.html" data-role="button" id="p1_b_resources">Resources</a>
+      <a href="learn_more.html" data-role="button" id="p1_b_learnMore">Learn More</a>
+      </p>
    </div><!-- /content -->
-   <div data-role="footer">
-      <h4>Page Footer</h4>
-   </div><!-- /header -->
    </div><!-- /page -->
 </body>
