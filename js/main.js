@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
 		mode:'both', 
 		callback: function() {
 			jQuery("[data-text]").each(function() {
-				if(~jQuery(this).attr('class').indexOf("ui-title")) {
+				if(jQuery(this).attr('class') && ~jQuery(this).attr('class').toString().indexOf("ui-title")) {
 					$(this).text(jQuery.i18n.prop(jQuery(this).attr('data-text')));					
 				}
 				$(".ui-btn-text", this).text(jQuery.i18n.prop(jQuery(this).attr('data-text')));
