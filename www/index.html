@@ -15,6 +15,7 @@
 <body> 
 	<div data-role="page" data-theme="a">
 		<div data-role="header">
+			<a href="#settings" data-icon="gear" class="ui-btn-right" data-rel="dialog">Options</a>
 			<h1 data-text="p1.title">World Bank GADA</h1>
 		</div><!-- /header -->
 		<div data-role="content">
@@ -100,5 +101,22 @@
 	  </div><!--security headers-->
    </div><!-- /collapsible-set -->
    </div><!-- /page -->
+   <div data-role="page" data-theme="a" id="settings">
+		<div data-role="header">
+			<h1 data-text="p1.title">World Bank GADA</h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<p>
+				<div id="langBox">
+					<span data-text="common.language">Language</span>:
+					<select id="lang">
+						<option value="browser">Indicated by the browser</option>
+						<option value="en">English</option>
+						<option value="es">Spanish</option>
+					</select>
+				</div>
+			</p>	
+		</div><!-- /content -->
+	</div><!-- /page -->
 </body>
 </html>
