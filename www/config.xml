@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.vdh.wb.WBGADA"
         versionCode="10" 
-        version   = "1.0.6">
+        version   = "1.0.7">
 
     <!-- versionCode is optional and Android only -->
 
@@ -28,7 +28,7 @@
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
 	<preference name="ios-statusbarstyle" value="black-opaque" />
-	 <preference name="detect-data-types" value="true" />
-	 <preference name="permissions" value="none"/>
-
+	<preference name="detect-data-types" value="true" />
+	<preference name="permissions" value="none"/>
+	<preference name="splash-screen-duration" value="2000" />
 </widget>
