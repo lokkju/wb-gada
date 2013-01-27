@@ -1,20 +1,21 @@
 <!DOCTYPE html> 
 <html> 
 	<head>
-		<title data-text="p1_l_title">Page Title</title> 
+		<title data-text="p1.title">Page Title</title> 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/themes/wb-gada.css" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" /> 
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.min.css" /> 
 		<link rel="stylesheet" href="css/main.css" />
-		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
-		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script> 
+		<script src="js/jquery-1.8.2.min.js"></script> 
+		<script src="js/jquery.mobile-1.2.0.min.js"></script> 
 		<script type="text/javascript" language="JavaScript" src="js/jquery.i18n.properties-min.js"></script>
 		<script type="text/javascript" language="JavaScript" src="js/main.js"></script>
 	</head> 
 <body> 
 	<div data-role="page" data-theme="a">
 		<div data-role="header">
+			<a href="#settings" data-icon="gear" class="ui-btn-right" data-rel="dialog">Options</a>
 			<h1 data-text="p1.title">World Bank GADA</h1>
 		</div><!-- /header -->
 		<div data-role="content">
@@ -100,5 +101,22 @@
 	  </div><!--security headers-->
    </div><!-- /collapsible-set -->
    </div><!-- /page -->
+   <div data-role="page" data-theme="a" id="settings" data-close-btn="right">
+		<div data-role="header">
+			<h1 data-text="p1.title">World Bank GADA</h1>
+		</div><!-- /header -->
+		<div data-role="content">
+			<p>
+				<div id="langBox">
+					<span data-text="common.language">Language</span>:
+					<select id="lang">
+						<option value="browser">Indicated by the browser</option>
+						<option value="en">English</option>
+						<option value="es">Spanish</option>
+					</select>
+				</div>
+			</p>	
+		</div><!-- /content -->
+	</div><!-- /page -->
 </body>
 </html>
