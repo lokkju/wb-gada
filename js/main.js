@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+$(document).on('pageinit', function() {
 	jQuery.i18n.properties({
 		name: 'messages',
 		path:'i18n/', 
